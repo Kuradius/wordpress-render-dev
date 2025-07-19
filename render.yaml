@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: wordpress-dev
+    env: docker
+    dockerfilePath: Dockerfile
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /
+    port: 80
+    public: false
+
