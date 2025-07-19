@@ -8,8 +8,6 @@ define('DB_HOST', 'sql7.freesqldatabase.com:3306');
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
-
-
 // ** Authentication Unique Keys and Salts. **
 define('AUTH_KEY',         'random-key-hier');
 define('SECURE_AUTH_KEY',  'random-key-hier');
@@ -26,6 +24,12 @@ $table_prefix = 'wp_';
 // ** Debug-modus ** //
 define('WP_DEBUG', false);
 
+// ** Forceer correcte URL en schakel SSL gedwongen redirect uit ** //
+define('FORCE_SSL_ADMIN', false);
+define('WP_HOME', 'http://wordpress-render-dev.onrender.com');
+define('WP_SITEURL', 'http://wordpress-render-dev.onrender.com');
+$_SERVER['HTTPS'] = 'off';
+
 // ** Absolute pad naar WordPress-directory ** //
 if (!defined('ABSPATH')) {
     define('ABSPATH', dirname(__FILE__) . '/');
@@ -33,4 +37,3 @@ if (!defined('ABSPATH')) {
 
 // ** Zet WordPress in gang ** //
 require_once(ABSPATH . 'wp-settings.php');
-define('FORCE_SSL_ADMIN', false);
