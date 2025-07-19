@@ -8,9 +8,7 @@ define('DB_HOST', 'sql7.freesqldatabase.com:3306');
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
-// ** Site URL instellingen ** //
-define('WP_HOME', 'https://wordpress-render-dev.onrender.com');
-define('WP_SITEURL', 'https://wordpress-render-dev.onrender.com');
+
 
 // ** Authentication Unique Keys and Salts. **
 define('AUTH_KEY',         'random-key-hier');
