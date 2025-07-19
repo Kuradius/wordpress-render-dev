@@ -33,3 +33,4 @@ if (!defined('ABSPATH')) {
 
 // ** Zet WordPress in gang ** //
 require_once(ABSPATH . 'wp-settings.php');
+define('FORCE_SSL_ADMIN', false);
