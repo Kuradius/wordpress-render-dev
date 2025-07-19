@@ -1,8 +1,10 @@
 <?php
-define('WP_USE_THEMES', false);
-require('./wp-blog-header.php');
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
 
-update_option('siteurl', 'https://wordpress-render-dev.onrender.com');
-update_option('home', 'https://wordpress-render-dev.onrender.com');
-
-echo "✅ URL’s zijn ingesteld. Verwijder deze code en zet de originele index.php terug.";
+define('WP_USE_THEMES', true);
+require __DIR__ . '/wp-blog-header.php';
